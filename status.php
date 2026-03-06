@@ -1,7 +1,3 @@
-<html>
-    <?php
-        $hello
-        echo 'hello'
-    
-    ?>
-</html>
+<?php
+    echo"Hi";
+?>
