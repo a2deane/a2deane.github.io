@@ -13,5 +13,6 @@ p {
   color: rgb(0, 0, 0);
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 20px;
   line-height: 1.5;
 }
