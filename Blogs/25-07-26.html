@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    
+<h1 style="text-align:center";> Image Encoding/Decoding</h1>
+<hr>
+<p style="text-align:center;">25 July 2026</p>
+</head>
+</body>
+<p style='text-align: left; text-justify: inter-ideograph;'>
+    I was watching an episode of Star City the other day, an alternate reality sci-fi show where the Soviets were the first to land in the moon. In one of the episodes, the engineering team was tasked with finding a way to transmit intelligence photos from Salyut-1, a thinly-veiled science (surveillance) space station, back to Star City. This got me thinking about how images are transmitted, and how I can make my own analogous solution in python.
+    <br>
+    <br>
+    My first idea is to get the RGB colour data per pixel and organize them into a vector. I then create a new vector for each pixel following, intending to make a matrix of these RGB colour values (if anything, aren’t our digital images basically RGB vector matrices? Correct me if I’m wrong). I’ve found a Python library, Pillow, that allows me to get RGB colour values and create images pixel-by-pixel. This pretty much covers the encoding part. Transmitting this data in an efficient manner, however, may prove to be difficult.
+    <br>
+    <br>
+    I’m not sure how to go about transmitting the data. I might play around with python sockets which allows for two computers to communicate with each other, most likely over TCP. In terms of efficiency, I’m thinking of converting each RGB vector into hexadecimal colour codes, and then convert it into binary to hopefully decrease the total amount of data needing to be transmitted.
+    <br>
+    <br>
+    I will certainly keep this blog updated with my progress!
+    <br>
+    <br>
+    Thanks for stopping by.
+</html>
